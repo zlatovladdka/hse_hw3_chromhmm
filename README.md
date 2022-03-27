@@ -25,3 +25,8 @@ H3K27me3 | wgEncodeBroadHistoneK562H3k27me3StdAlnRep1.bam | H3K27.bam
 Fold Enrichment overlap | Fold Enrichment TES neighborhood | Fold Enrichment TSS neighborhood | Emission Parameters | Transition parameters
 --- | --- | --- | --- | ---
 ![](/output/K562_10_overlap.png) |  ![](/output/K562_10_RefSeqTES_neighborhood.png) | ![](/output/K562_10_RefSeqTSS_neighborhood.png) |  ![](/output/emissions_10.png) | ![](/output/transitions_10.png)
+
+
+## UCSC 
+
+![](/output/ucsc1.png)
