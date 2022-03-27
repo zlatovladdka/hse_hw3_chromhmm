@@ -56,9 +56,24 @@ Fold Enrichment overlap | Fold Enrichment TES neighborhood | Fold Enrichment TSS
 
 ![](/output/ucsc1.png)
 ![](/output/ucsc2.png)
+![](/output/ucsc3.png)
 
 
-## Бонус
+
+| Эпигенетический типа | Название | Характерная метка | Свойства                                                                      |
+|-----------------------------|----------------------|-------------------|--------------------------------------------------------------------------------------|
+| 1                           | Transcribed          | H3K4me1, H2A.Z    |                                                      |
+| 2                           | Promoter             | H2A.Z, H3K79me2, Pol2B | Высокий уровень CpGIsland, RefSeqExon, RefSeqTES, RefSeqTSS, RefSeqTSS2kb. Расположен в начале гена.  |
+| 3                           | Promoter             | H3K79me2          | Высокий уровень RefSeqGene. Находится обычно в начале гена.         |
+| 4                           | Transcriptional      | H3K4me1, H3K79me2 | Высокий уровень RefSeqGene и RefSeqTES. Находится в гене.                            |
+| 5                           | Transcriptional      | H3k36me3          | Высокий уровень RefSeqGene и RefSeqTES. Находится в гене.                                                                     |
+| 6                           | Repressed heterochromatin | -            | Занимает большую часть генома. Высокий уровень ассоциации с ядерной ламиной. |
+| 7                           | Repressed heterochromatin (?) |  -                | Высокий процент нахождения в геноме.  Высокий уровень ассоциации с ядерной ламиной.|
+| 8                           | Enhancer             | Suz12             | Высокий уровень ассоциации с ядерной ламиной. Расположен как в генах, так и между ними. |
+| 9                           | Promoter             | CBX2              | Высокий уровень ассоциации с ядерной ламиной. Расположен как в генах, так и между ними. |
+| 10                          | Enhancer             | CTCF              | Высокий уровень ассоциации с ядерной ламиной.  Расположен как в генах, так и между ними.|
+
+# Бонус
 
 ```python
 import pandas as pd
