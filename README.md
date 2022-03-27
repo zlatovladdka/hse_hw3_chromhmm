@@ -76,4 +76,4 @@ df.loc[df[3] == 10, 3] = '10_promoter'
 df.to_csv('/content/gdrive/MyDrive/HW3_chromhmm/K562_10_dense_edit.bed', sep='\t', index=False, header=None)
 ```
 
-
+![](/output/bonus.png)
