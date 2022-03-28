@@ -78,16 +78,16 @@ Fold Enrichment overlap | Fold Enrichment TES neighborhood | Fold Enrichment TSS
 ```python
 import pandas as pd
 df = pd.read_csv('/content/gdrive/MyDrive/HW3_chromhmm/output_data/K562_10_dense.bed', encoding='utf-8', sep='\t', comment='t', header=None)
-df.loc[df[3] == 1, 3] = '1_insulator'
+df.loc[df[3] == 1, 3] = '1_transcribed'
 df.loc[df[3] == 2, 3] = '2_promoter'
-df.loc[df[3 ]== 3, 3] = '3_poised_promoter'
-df.loc[df[3] == 4, 3] = '4_rpr_heterochromatin'
-df.loc[df[3] == 5, 3] = '5_trx_elongation'
-df.loc[df[3] == 6, 3] = '6_skip_exons'
-df.loc[df[3] == 7, 3] = '7_skip_exons'
-df.loc[df[3] == 8, 3] = '8_trx_elongation'
+df.loc[df[3 ]== 3, 3] = '3_promoter'
+df.loc[df[3] == 4, 3] = '4_transcriptional'
+df.loc[df[3] == 5, 3] = '5_transcriptional'
+df.loc[df[3] == 6, 3] = '6_rpr_heterochromatin'
+df.loc[df[3] == 7, 3] = '7_rpr_heterochromatin'
+df.loc[df[3] == 8, 3] = '8_enhancer'
 df.loc[df[3] == 9, 3] = '9_promoter'
-df.loc[df[3] == 10, 3] = '10_promoter'
+df.loc[df[3] == 10, 3] = '10_enhancer'
 df.to_csv('/content/gdrive/MyDrive/HW3_chromhmm/K562_10_dense_edit.bed', sep='\t', index=False, header=None)
 ```
 
